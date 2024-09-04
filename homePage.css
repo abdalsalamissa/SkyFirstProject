@@ -1,0 +1,332 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.navbar a.active {
+    font-weight: bold;
+}
+
+.container {
+    padding: 20px;
+}
+
+.welcome-message {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.welcome-message button {
+    background-color: #2d8a4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 500px;
+}
+
+.profile-card,
+.stats-card,
+.news-card,
+.requests-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 700px;
+}
+
+.profile-card>div {
+    width: 200px;
+    margin: 10px;
+    line-height: 15px;
+    font-size: 15px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-info img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.profile-info div {
+    margin-right: 20px;
+}
+
+.profile-info div p {
+    margin: 5px 0;
+}
+
+.profile-card div p {
+    font-weight: 500;
+    align-items: center;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.profile-card div i {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+
+.profile-info div p:last-child {
+    color: gray;
+}
+
+.profile-card button {
+    background-color: #2d8a4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.stats-card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -250px;
+    margin-left: 700px;
+}
+
+.stats-card .stat {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    padding: 35px;
+    background-color: #2d8a4d;
+    color: white;
+    border-radius: 8px;
+}
+
+.stats-card .stat i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.stats-card .stat p {
+    font-size: 17px;
+}
+
+.news-card {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 30px;
+    /* Adjust as needed to provide space for the dots */
+}
+
+.image-alt {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Slightly transparent background */
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    z-index: 2;
+    margin-left: -680px;
+    margin-top: 180px;
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    position: absolute;
+    top: 40px;
+    left: 100%;
+    transition: left 0.5s ease-in-out;
+    opacity: 0;
+    z-index: 0;
+}
+
+.news-card img.active {
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.dots label {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #d9534f;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dots label:hover {
+    background-color: #c9302c;
+}
+
+
+.requests-card {
+    padding: 0;
+}
+
+.requests-card .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.requests-card .header h3 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.requests-card .header input {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.requests-card .request-list {
+    display: flex;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.requests-card .request-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 20px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.requests-card .request-item img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.requests-card .request-item p {
+    margin: 5px 0;
+}
+
+.requests-card .request-item p:first-child {
+    font-weight: 500;
+}
+
+.requests-card .request-item button {
+    background-color: #2d8a4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.requests-card .request-item button.decline {
+    background-color: #d9534f;
+}
+
+.requests-card .footer {
+    text-align: right;
+    padding: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.requests-card .footer a {
+    color: #2d8a4d;
+    text-decoration: none;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.card h2 {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.card .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card .buttons button {
+    padding: 10px 20px;
+    border: 1px solid #2e7d32;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card .buttons .approve {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.card .buttons .decline {
+    background-color: red;
+    color: white;
+}

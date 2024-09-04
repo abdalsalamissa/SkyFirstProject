@@ -1,0 +1,27 @@
+.navbar {
+    background-color: #2e7d32;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar a.active {
+    font-weight: bold;
+}
+
+.navbar .icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .icons i {
+    margin-left: 20px;
+}

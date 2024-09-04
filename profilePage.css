@@ -1,0 +1,123 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.navbar a.active {
+    font-weight: bold;
+}
+.container {
+    padding: 20px;
+}
+.profile-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.profile-header img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+.profile-header .info {
+    flex-grow: 1;
+}
+.profile-header .info h2 {
+    margin: 0;
+    font-size: 24px;
+}
+.profile-header .info p {
+    margin: 5px 0;
+    color: #666;
+}
+.profile-header .stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    /* margin-left: 20px; */
+}
+.profile-header .stats div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* text-align: center; */
+     margin: 0 42px;
+}
+.profile-header .stats div i {
+    font-size: 50px;
+    color: #2e7d32;
+    /* margin-left: 25px; */
+}
+.profile-header .stats div p {
+    margin: 5px 0;
+    color: #666;
+    margin-left: 25px;
+}
+.profile-header .new-request {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+.section h3 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+.section h3 i {
+    margin-right: 10px;
+    color: #2e7d32;
+}
+.section .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.section .card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 200px;
+    max-width: 200px;
+}
+.section .card h4 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+.section .card p {
+    margin: 5px 0;
+    color: #666;
+}
+.section .card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto 10px;
+}
+.section .view-more {
+    text-align: right;
+    margin-top: 20px;
+}
+.section .view-more a {
+    color: #2e7d32;
+    text-decoration: none;
+}
